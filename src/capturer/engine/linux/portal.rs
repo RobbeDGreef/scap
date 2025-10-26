@@ -228,7 +228,7 @@ impl<'a> ScreenCastPortal<'a> {
         let proxy = connection.with_proxy(
             "org.freedesktop.portal.Desktop",
             "/org/freedesktop/portal/desktop",
-            Duration::from_secs(4),
+            Duration::from_secs(10),
         );
 
         let token = format!("scap_{}", rand::random::<u16>());
