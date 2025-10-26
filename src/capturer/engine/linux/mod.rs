@@ -282,8 +282,8 @@ fn pipewire_capturer(
             FormatProperties::VideoMaxFramerate,
             Fraction,
             pw::spa::utils::Fraction {
-                num: options.fps,
-                denom: 1
+                num: options.fps * 1000,
+                denom: 1000
             }
         ),
     );
